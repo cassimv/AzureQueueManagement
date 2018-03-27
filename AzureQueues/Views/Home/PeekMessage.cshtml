@@ -1,0 +1,22 @@
+﻿@model string
+@{
+    ViewBag.Title = "Peek Message";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Peek Message</h2>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Message</th>
+    </tr>
+    <tr>
+        <td>
+             @Model
+        </td>
+    </tr>
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
